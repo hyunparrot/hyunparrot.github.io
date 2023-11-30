@@ -5,7 +5,7 @@ layout: single
 published: true
 date: 2023-11-30
 categories:
-  - Blog
+  - kotlin
 tags:
   - Blog
 ---
