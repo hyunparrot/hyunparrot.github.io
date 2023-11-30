@@ -8,25 +8,28 @@
             📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
       </li>
       <li>
-        <span class="nav__sub-title">categories</span>
+        <span class="nav__sub-title">Study</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Study" %}
+                    {% if category[0] == "Kotlin" %}
                         <li><a href="/categories/kotlin" class="">개발일지({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
+      </li>
+      <li>
+        <span class="nav__sub-title">Daily life</span>
              <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Blog" %}
-                        <li><a href="/categories/blog" class="">parrot({{category[1].size}})</a></li>
+                    {% if category[0] == "Daily" %}
+                        <li><a href="/categories/daily" class="">parrot({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
              <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Blog" %}
-                        <li><a href="/categories/blog" class="">daily life({{category[1].size}})</a></li>
+                    {% if category[0] == "Daily" %}
+                        <li><a href="/categories/daily" class="">trivial but happy({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
