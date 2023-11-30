@@ -1,5 +1,5 @@
 ---
-title:  "study" 
+title:  "study2" 
 excerpt: "개발일지2일차"
 
 categories:
