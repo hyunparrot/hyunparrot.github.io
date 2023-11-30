@@ -11,8 +11,22 @@
         <span class="nav__sub-title">etc</span>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "Study" %}
+                        <li><a href="/categories/kotlin" class="">개발일지({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+             <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "Blog" %}
-                        <li><a href="/categories/blog" class="">Blog Dev({{category[1].size}})</a></li>
+                        <li><a href="/categories/blog" class="">parrot({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+             <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Blog" %}
+                        <li><a href="/categories/blog" class="">daily life({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
