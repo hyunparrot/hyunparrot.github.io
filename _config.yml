@@ -73,9 +73,9 @@ naver_site_verification  :
 
 # Social Sharing
 
-# instagram : 0ldcar_
-# email : chh96077@gmail.com
-# github : heoni00
+# instagram : Hyun_parrot
+# email : ccoyh1071@gmail.com
+# github : hyunparrot
 
 twitter:
   username               :
@@ -85,7 +85,7 @@ facebook:
   publisher              :
 
 
-og_image                 :  "/assets/images/cat kakao.jpg" # Open Graph/Twitter default site image
+og_image                 :  "/assets/images/cat_kakao.png" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -104,7 +104,7 @@ analytics: # 블로그 접근 경로 확인 코드
 # Site Author / 사이드바 소개 부분
 author:
   name             : "정현우"
-  avatar           : "/assets/images/Kakaotalk.jpg"
+  avatar           : "/assets/images/Kakaotalk.png"
   bio              : "정현우의 코딩일지"
   location         : "대구"
 
