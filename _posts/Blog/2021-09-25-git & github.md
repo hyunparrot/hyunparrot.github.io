@@ -1,9 +1,9 @@
 ---
 title:  "study" 
-excerpt: "코딩"
+excerpt: "개발일지1일차"
 
 categories:
-  - 코딩
+  - kotlin
 tags:
   - [Blog, Git, Github,]
 
@@ -11,14 +11,316 @@ toc: true
 toc_sticky: true
  
 date: 2023-11-21
-last_modified_at: 2020-11-30
+last_modified_at: 2023-11-30
 
 ---
 
 
 ## 위 형식을 참고하여 블로그를 커스텀하시오
 
-`-` 게시물 업로드 양식312321312321
+데이터 타입 변경 하고 싶을때
+
+
+fun maln() {
+    // 최상위에서의 함수 호출 및 변수 선언
+    val (설정할 이름): (lnt,String 등등) = (숫자, 문자 등등)
+    prlntln(설정할 이름)
+}
+
+
+
+val test 9 : lnt = 1234
+val test10 = test9.toString()
+prlntln(test10::class.java.slmpleName)
+
+=>String
+
+val test 11 : String = "1234"     (String은 "" 필수)
+val test12 = lnteger.parselnt(tent11)
+prlntln(test12::class.java.slmpleName)
+
+=>lnt         (String 에서 lnt 로 변경됨)
+
+prlntln(test12 + 1234)
+
+=>2468
+
+
+*null = 없다
+
+val test13  = ""        =>있었는데 지금없다
+val test14 = null      => 있던적이 없다
+
+1)prlntln(test13)
+=> 안나옴
+2)prlntln(test14)
+=> null
+
+val test15 : String = null
+=> error
+
+val test16 : String? = null
+prlntln(test16)
+=>null
+
+val test17 : String? = "abc"
+prlntln(test17)
+=>abc
+
+*null은 아직 이해가 안잡혀서, 더 공부를 해봤는데,
+
+null은 값이 존재하지 않음을 나타내는 특별한 상태를 나타내는 값이다.
+저기 위에 나온 예시 코드중에 String 뒤에  ' ? '가 들어가는데 (Nullable) 따라서 ' String? '은 nullable한 문자열을 나타낸다.
+val nullableString: String? = null
+여기서 nullableString은 문자열 또는 null이 될 수 있다.
+
+리스트 만드는 방법
+
+fun main() {
+     
+1.   val testList1 = ArrayList<String>()
+     testList1.add("a")
+     testList1.add("b")
+     testList1.add("c")
+
+     println(testList1)
+     =>a, b, c
+
+     println(testList1[0])
+=>a
+     println(testList1[1])
+=>b
+     println(testList1[2])
+=>c
+
+2.   val testList2 = listof("a", "b", "c")
+     println(testList2)
+=>a,b,c
+
+3.   val testList3 = mutableListof("a", "b", "c")
+     println(testList3)
+=>a,b,c
+
+4.   val testList3 = mutableListof("a", "b", "c")
+     println(testList3)
+     testList3.add("d")
+    
+     println(testList3)
+=>a,b,c,d
+
+5.    val testList4 = listof("student1","student2","student3","student4", "teacher1", "student5")
+      println(testList4)
+=>student1,student2,student3,student4, teacher1, student5
+
+6.      val testList5 = listof("student1","student2","student3","student4", "teacher1", "student5")
+     println(testList5)
+     println(testList5.filter { it.startsWith("s")})
+=>student1, student2, student3, student4, student5
+
+7.      val testList6 = listof("student1","student2","student3","student4", "teacher1", "student5", null)
+     println(testList6)
+     println(testList6.filter { it.startsWith("s")})
+     println(testList6.filterNotNull().filter { it.startsWith("s")})
+=>student1, student2, student3, student4, student5
+
+에러나는부분
+
+    var test1 : String = "a"
+    var test2 : String = "b"
+
+    test1 = test2
+
+    println(test1)
+=>b
+
+    var test3 : String = "c"
+    var test4 : String? = "d"
+
+    test3 = test4
+=>error
+
+    var test3 : String = "c"
+    var test4 : String? = "d"
+
+    test3 = test4!!       !!는 null이 아니다 라는거
+    println(test3)
+=>d
+
+
+반복문
+
+      val testList6 = listof("a", "b", "c", "d", "e", "f")
+      for (i in testList6) {
+      println(i)
+}
+=>a
+    b
+    c
+    d
+    e
+    f
+*반복문 코드중에 i 는 다른걸로 해도됨 하나씩 가져올 이름이기때문에 ex)i대신 d, j, k등등
+
+*리스트에 숫자를 출력하고 싶다면?
+=>
+
+      for (i in 1..10) {
+          println(i)
+}
+=>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+*숫자를 1씩 아니라 2씩 올라가고 싶다면?
+
+for (i in 1..10. step 3){
+     println(i)
+}
+=>
+1
+4
+7
+10
+
+
+for (i in 1..3){
+    println("i의 값은 : " +i)              => " " 이 안에 다 쓰고싶다면 println("i의 값은 : $i")
+}
+=>
+i의 값은 : 1
+i의 값은 : 2
+i의 값은 : 3
+
+
+for (i in 1..3){
+     for (j in 1..3){
+         println("i is $i j is $j")
+     }
+}
+=>
+i is 1 j is 1
+i is 1 j is 2
+i is 1 j is 3
+i is 2 j is 1
+i is 2 j is 2
+i is 2 j is 3
+i is 3 j is 1
+i is 3 j is 2
+i is 3 j is 3
+
+
+
+구구단
+
+fun main() {
+    
+    for (i in 2..9){
+        for (j in 1..9){
+            val result = i * j
+            println("$i $j = $result")
+        }
+    }
+
+
+
+LIST, MAP, SET
+
+
+1.List
+
+val testList2 = mutableListOf("a", "b","c")
+println(testList2)
+=> a,b,c
+
+testList2.add("d")
+prittln(testList2)
+=>a, b, c, d
+
+testList2.remove("a")
+println(testList2)
+=>b, c, d
+
+*List는 순서가 중요하고 중복을 허용함
+
+2.MAP
+
+// MAP
+// 5 유리
+// 10 철수
+// 15 짱구
+// 22 훈이
+
+val mutableList1 = mutableListOf<Int>()
+mutableList1.add(5)
+mutableList1.add(10)
+mutableList1.add(15)
+mutableList1.add(22)
+
+val mutableList2 = mutableListOf<String>()
+mutableList2.add("유리")
+mutableList2.add("철수")
+mutableList2.add("짱구")
+mutableList2.add("훈이")
+
+val findIndex(이건 이름) = mutableList1.indexOf(10)
+println(findIndex)
+=> 1
+
+철수를 찾으려면
+println(mutableList2)[findIndex])
+=>철수
+
+더 간단하게 하려면
+
+val testMap1 = mutableMapof<Int, String>( )
+testMap1.put(5, "유리")
+testMap1.put(10, "철수")
+testMap1.put(15, "짱구")
+testMap1.put(20, "훈이")
+
+println(testMap1[15])
+=>짱구
+println(testMap1)
+=>{(5=유리, 10=철수, 15=짱구, 20=훈이}
+
+문제)
+val student = mutableMapOf<Int, String>()
+    student[99] = "코딩"
+     student[20] = "철수"
+     student[35] = "민수"
+     student[48] = "가영"
+     student[100] = "공부"
+     student[22] = "수진"
+     student[45] = "스파르타"
+     student[88] = "너무"
+     student[91] = "다니엘"
+     student[87] = "해린"
+     student[54] = "민지"
+     student[42] = "해인"
+
+점수가 50점 이상인 사람들의 이름만 반복문과 조건문을 통해서 출력해보자.
+
+=>
+val testList = ArrayList<String>()------------ 나중에 밑에서 활용할 수 있게 리스트를 하나 만들어서
+
+for (i in student){------ 여기 있는 친구들의 데이터들을 가져와서 i 에 넣어와서 프린트 해보겠다
+if(i.key >= 50){-------i의 key 값이 50 이상인 친구들의 정보를 가져와 보겠다
+println(i.value)-------i에 있는프린트 해보겠다 (value는 이름, key 는 숫자)
+}
+}
+}
+=>[코딩, 공부, 너무, 어렵다, 해린, 민지]
+
+
 
 ## 위 형식을 참고하여 블로그를 커스텀하시오
 
