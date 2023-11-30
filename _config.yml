@@ -25,7 +25,7 @@ url                      : "https://hyunparrot.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "유저이름/comments" #댓글 경로 / github name/repository
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/logo.png" # 타이틀 옆 로고
+logo                     : "/assets/images/logo kakao.png" # 타이틀 옆 로고
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -85,7 +85,7 @@ facebook:
   publisher              :
 
 
-og_image                 :  "/assets/images/dol_kakao.jpg" # Open Graph/Twitter default site image
+og_image                 :  "/assets/images/cat kakao.jpg" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -104,7 +104,7 @@ analytics: # 블로그 접근 경로 확인 코드
 # Site Author / 사이드바 소개 부분
 author:
   name             : "정현우"
-  avatar           : "/assets/images/profile.jpg"
+  avatar           : "/assets/images/KakaoTalk.jpg"
   bio              : "정현우의 코딩일지"
   location         : "대구"
 
@@ -134,7 +134,7 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/유저이름"
+      url: "https://github.com/hyunparrot"
     #- label: "Twitter"
     #  icon: "fab fa-fw fa-twitter-square"
       # url:
