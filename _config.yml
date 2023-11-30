@@ -16,16 +16,16 @@ minimal_mistakes_skin    : "myskin" # "default"  "air", "aqua", "contrast", , "d
 
 # Site Settings
 locale                   : "ko-KR" # 블로그 사용 언어
-title                    : "블로그 타이틀" # 블로그 타이틀
+title                    : "Hyunparrot" # 블로그 타이틀
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "정현우"
 description              : "코딩 일지"
 url                      : "https://hyunparrot.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "유저이름/comments" #댓글 경로 / github name/repository
+repository               : "hyunparrot/comments" #댓글 경로 / github name/repository
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/logo kakao.png" # 타이틀 옆 로고
+logo                     : "/assets/images/logo_kakao.png" # 타이틀 옆 로고
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -104,7 +104,7 @@ analytics: # 블로그 접근 경로 확인 코드
 # Site Author / 사이드바 소개 부분
 author:
   name             : "정현우"
-  avatar           : "/assets/images/KakaoTalk.jpg"
+  avatar           : "/assets/images/Kakaotalk.jpg"
   bio              : "정현우의 코딩일지"
   location         : "대구"
 
