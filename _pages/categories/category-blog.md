@@ -1,7 +1,7 @@
 ---
-title: "코딩"
+title: "coding"
 layout: archive
-permalink: categories/코딩일지
+permalink: categories/kotlin
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.코딩일지 %}
+{% assign posts = site.categories.kotlin %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
