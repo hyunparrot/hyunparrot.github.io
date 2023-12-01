@@ -1,7 +1,7 @@
 ---
-title: "coding"
+title: "나의 일상"
 layout: archive
-permalink: categories/kotlin
+permalink: categories/daily
 author_profile: true
 sidebar_main: true
 ---
