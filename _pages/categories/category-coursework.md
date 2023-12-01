@@ -1,7 +1,7 @@
 ---
-title: "coding"
+title: "과제를 내는곳입니다"
 layout: archive
-permalink: categories/kotlin
+permalink: categories/coursework
 author_profile: true
 sidebar_main: true
 ---
