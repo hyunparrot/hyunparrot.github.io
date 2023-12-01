@@ -1,5 +1,5 @@
 ---
-title: "coding"
+title: "Kotlin 관련"
 layout: archive
 permalink: categories/kotlin
 author_profile: true
