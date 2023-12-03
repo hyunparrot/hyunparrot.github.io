@@ -40,7 +40,7 @@
   (facebook, $facebook-color),
   (twitter, $twitter-color),
   (linkedin, $linkedin-color),
-    (naver, #2DB400);
+  (naver, #2DB400);
 
   @each $buttoncolor, $color in $buttoncolors {
     &--#{$buttoncolor} {
