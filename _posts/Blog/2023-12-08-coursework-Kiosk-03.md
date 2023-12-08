@@ -1,6 +1,6 @@
 ---
 title:  "키오스크 프로그래밍 과제" 
-excerpt: "일상15, 과제03"
+excerpt: "study15, coursework03"
 
 categories:
   - Coursework
