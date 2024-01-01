@@ -29,7 +29,7 @@
              <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Daily" %}
-                        <li><a href="/categories/daily" class="">trivial but happy({{category[1].size}})</a></li>
+                        <li><a href="/categories/daily" class="">Trivial but happy({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
