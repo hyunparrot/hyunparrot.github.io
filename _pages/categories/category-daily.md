@@ -1,7 +1,7 @@
 ---
 title: "나의 일상"
 layout: archive
-permalink: categories/daily
+permalink: daily
 author_profile: true
 sidebar_main: true
 ---
